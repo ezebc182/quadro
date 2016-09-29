@@ -1,0 +1,17 @@
+
+RewriteEngine On
+RewriteRule ^detalle-producto/([0-9]+)/([A-Za-z0-9-\+]+)/?$ detalle-producto.php?id=$1 [NC,QSA]
+ErrorDocument 401 /401
+ErrorDocument 404 /404
+ErrorDocument 500 /500
+#ErrorDocument 400 http://localhost/quadro/web/error?code=400
+#ErrorDocument 401 http://localhost/quadro/web/error?code=401
+#ErrorDocument 403 http://localhost/quadro/web/error?code=403
+#ErrorDocument 404 http://localhost/quadro/web/error?code=404
+#ErrorDocument 500 http://localhost/quadro/web/error?code=500
+#ErrorDocument 502 http://localhost/quadro/web/error?code=502
+#ErrorDocument 504 http://localhost/quadro/web/error?code=504
+#ErrorDocument 403 http://quadroequipamiento.com/403
+#ErrorDocument 404 http://quadroequipamiento.com/404
+#ErrorDocument 500 http://quadroequipamiento.com/500
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

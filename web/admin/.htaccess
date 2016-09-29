@@ -1,0 +1,12 @@
+#AuthType Basic
+#AuthName "quadro"
+#AuthUserFile /web/admin/.htaccess
+#Require valid-user
+RewriteEngine On
+#Deny from all
+#ErrorDocument 404 Fichero-no-encontrado
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+
+

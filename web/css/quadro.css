@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel, .item, .active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+.carousel-caption {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #b33f8a;
+    color: #ffffff;
+}
+
+.header-logo {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
